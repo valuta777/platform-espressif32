@@ -11,7 +11,8 @@
     "bluetooth"
   ],
   "frameworks": [
-    "espidf"
+    "espidf",
+    "arduino"
   ],
   "name": "Espressif ESP32-C6-DevKitC-1",
   "upload": {
