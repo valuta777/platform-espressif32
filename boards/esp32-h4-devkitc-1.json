@@ -1,0 +1,25 @@
+{
+  "build": {
+    "core": "esp32",
+    "f_cpu": "160000000L",
+    "f_flash": "80000000L",
+    "flash_mode": "qio",
+    "mcu": "esp32h4"
+  },
+  "connectivity": [
+    "wifi",
+    "bluetooth"
+  ],
+  "frameworks": [
+    "espidf"
+  ],
+  "name": "Espressif ESP32-H4-DevKitC-1",
+  "upload": {
+    "flash_size": "8MB",
+    "maximum_ram_size": 524288,
+    "maximum_size": 8388608,
+    "require_upload_port": true,
+    "speed": 460800
+  },
+  "vendor": "Espressif"
+}
