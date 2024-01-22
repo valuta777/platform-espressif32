@@ -51,8 +51,9 @@ if os.environ.get("PYTHONPATH"):
 
 env = DefaultEnvironment()
 env.SConscript("_embed_files.py", exports="env")
-
 platform = env.PioPlatform()
+pkg = platform.get_package("framework-espidf")
+pkg.metadata.version.build = None
 board = env.BoardConfig()
 mcu = board.get("build.mcu", "esp32")
 idf_variant = mcu.lower()
